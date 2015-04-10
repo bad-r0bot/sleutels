@@ -3,5 +3,8 @@ package com.sleutels;
 /**
  * Created by Jim on 10/04/2015.
  */
-public class Sloten {
+
+import android.app.Activity;
+
+public class Sloten extends Activity{
 }
