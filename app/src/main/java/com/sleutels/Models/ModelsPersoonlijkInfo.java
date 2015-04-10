@@ -7,8 +7,11 @@ package com.sleutels.Models;
 public class ModelsPersoonlijkInfo {
 
 
-    //singleton pattern
     private static ModelsPersoonlijkInfo _instance;
+    private String userNaam;
+    private String userTel;
+    private String userAdres;
+    private String userMail;
 
     public static ModelsPersoonlijkInfo getInstance() {
         if (_instance == null)
@@ -16,42 +19,40 @@ public class ModelsPersoonlijkInfo {
 
         return _instance;
     }
-    private String userNaam;
-    private String userTel;
-    private String userAdres;
-    private String userMail;
 
-    public String getUserMail() {
-        return userMail;
-    }
-
-    public String getUserTel() {
-        return userTel;
-    }
-
-    public void setUserTel(String userTel) {
-        this.userTel = userTel;
-    }
-
-    public void setUserMail(String userMail) {
-        this.userMail = userMail;
-    }
-
-    public String getUserAdres() {
-        return userAdres;
-    }
-
-    public void setUserAdres(String userAdres) {
-        this.userAdres = userAdres;
-    }
-
-    public String getUserNaam() {
+    public String getUsername() {
         return userNaam;
     }
 
     public void setUserNaam(String userNaam) {
         this.userNaam = userNaam;
     }
+
+    public String getUserEmail() {
+        return userMail;
+    }
+
+    public void setUserEmail(String userMail) {
+        this.userMail = userMail;
+    }
+
+    public String getUserPhone() {
+        return userTel;
+    }
+
+    public void setUserPhone(String userTel) {
+        this.userTel = userTel;
+    }
+
+    public String getUserAddress() {
+        return userAdres;
+    }
+
+    public void setUserAddress(String userAdres) {
+        this.userAdres = userAdres;
+    }
+
+
 
 
 

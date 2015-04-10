@@ -8,8 +8,11 @@ package com.sleutels.Models;
 public class ModelsSettings {
 
 
-    //singleton pattern
     private static ModelsSettings _instance;
+    private boolean online = true;
+    //Crashes if any text is present. Requires notification of that.
+    private String ip4Adress = "127.0.0.1";
+
     public static ModelsSettings getInstance()
     {
         if( _instance == null )
@@ -17,9 +20,6 @@ public class ModelsSettings {
 
         return _instance;
     }
-
-    private boolean online = true;
-    private String ip4Adress = "127.0.0.1"; //Crashes if any text is present. Requires notification of that.
 
     public String getIpAddress()
     {

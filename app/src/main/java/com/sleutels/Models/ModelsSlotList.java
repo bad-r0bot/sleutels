@@ -8,8 +8,9 @@ import java.util.ArrayList;
 
 public class ModelsSlotList {
 
-    //singleton pattern
     private static ModelsSlotList _instance;
+    private ArrayList<String> slotenLijst = new ArrayList<String>();
+    private int selectedSloten;
 
     public static ModelsSlotList getInstance() {
         if (_instance == null)
@@ -18,24 +19,20 @@ public class ModelsSlotList {
         return _instance;
     }
 
-    private ArrayList<String> slotenLijst = new ArrayList<String>();
+    public void clearSloten() {
+        slotenLijst.clear();
+    }
 
-    private int selectedSloten;
-
-    public void setSlotenLijst(ArrayList<String> slotenLijst) {
-        this.slotenLijst = slotenLijst;
+    public void addSloten(String string) {
+        slotenLijst.add(string);
     }
 
     public ArrayList<String> getSlotenLijst() {
         return slotenLijst;
     }
 
-    public void addSloten(String string){
-        slotenLijst.add(string);
-    }
-
-    public void clearSloten(){
-        slotenLijst.clear();
+    public void setSlotenLijst(ArrayList<String> slotenLijst) {
+        this.slotenLijst = slotenLijst;
     }
 
     public void setCache(){

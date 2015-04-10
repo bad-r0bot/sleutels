@@ -8,6 +8,7 @@ public class ModelsSlotenInfoBeknopt {
 
     //singleton pattern
     private static ModelsSlotenInfoBeknopt _instance;
+    private String shortInfoSloten;
 
     public static ModelsSlotenInfoBeknopt getInstance() {
         if (_instance == null)
@@ -15,7 +16,6 @@ public class ModelsSlotenInfoBeknopt {
 
         return _instance;
     }
-    private String shortInfoSloten;
 
     public String getShortInfoSloten() {
         return shortInfoSloten;
@@ -25,7 +25,7 @@ public class ModelsSlotenInfoBeknopt {
         this.shortInfoSloten = shortInfoSloten;
     }
 
-    public void setShortInfoSlotenHardCoded(String string){
+    public void setShortInfoSlotenFromCache(String string) {
 
         this.shortInfoSloten = string;
 
