@@ -1,3 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">sleutels</string>
+    <string name="app_name">De Sleutelaar</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="informatiebedrijf">Slotenbedrijf De Sleutelaar is een slotenbedrijf dat sloten maakt voor de particuliere en comerciële sector.</string>
+    <string name="slotSelect">Selecteer een slot</string>
+    <string name="getIPtext">IP adres:</string>
+    <string name="nextPage">Klik op > om te bestellen.</string>
+    <string name="selectLock">Selecteer hieronder uw gewenste slot</string>
+    <string name="noConnectionFound">De server heeft geen verbinding met u. Offline modus ingeschakeld.</string>
+    <string name="connected">"U bent ingelogd."</string>
+    <string name="noConnectionForOrder">De server heeft nog geen verbinding. Bestellen is daardoor niet mogelijk.</string>
+    <string name="orderAccepted">Uw bestelling wordt zo spoedig mogelijk verstuurd. Dank u voor de bestelling.</string>
+
+    <string name="persoonlijkeGegevens">Vul hier uw gegevens in:</string>
+    <string name="nameText">Naam:</string>
+    <string name="phoneNumberText">Tel #:</string>
+    <string name="addressText">Adres:</string>
+    <string name="emailText">E-mail:</string>
+
+
+
+
+
+    <string name="rightSide">&#xf0a9;</string>
+    <string name="leftSide">&#xf0a8;</string>
+
 </resources>
